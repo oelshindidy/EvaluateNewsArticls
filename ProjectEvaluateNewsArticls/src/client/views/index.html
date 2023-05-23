@@ -1,0 +1,44 @@
+
+<body>
+  <main>
+    <header>
+			<h1>Evaluate a news article with Natural Language Processing</h1>
+      
+		</header>
+
+    <section>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+         
+            <input id="article_url" type="text" name="input" value="" placeholder=" Enter a URL of an article">
+            <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+                onsubmit="return Client.handleSubmit(event)">
+        </form>
+    </section>
+
+    <section>
+     <h2>Form Results:</h2>
+        <div id="results">
+          <div id="agreement" class="apidata"></div>
+          <div id="subjectivity" class="apidata2"></div>
+          <div id="confidence"class="apidata"></div>
+          <div id="irony" class="apidata2"></div>
+          <div id="score_tag" class="apidata"></div>
+            </div>
+         
+        </div>
+    </section>
+
+    <footer>
+    <p class="copyright ">Developed by Omneya Elshindidy </p>
+    </footer>
+</main>
+  <script>
+    // Check that service workers are supported
+    if ("serviceWorker" in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
+    }
+  </script>
+</body>

@@ -1,0 +1,50 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+  justify-content: center;
+  text-align: center;
+
+  background:#cafafe  ;
+}
+
+p {
+  margin: 1rem;
+}
+
+section {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+
+
+
+.apidata{
+
+font-style: italic;
+background-color:#55bcc9;
+font-size: 1.5rem ;
+border: 5px solid #cafafe;
+
+
+}
+
+.apidata2{
+  font-style: italic;
+  background-color:  #3feee6 ;
+  font-size: 1.5rem;
+  border: 5px solid #cafafe;
+ 
+}
+ h2{
+ font-size :2rem;
+
+ }
